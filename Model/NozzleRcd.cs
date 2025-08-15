@@ -1,0 +1,14 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Model
+{
+    public class NozzleRcd
+    {
+        public int TriggerTime { get; set; }
+        public string NozzNo { get; set; }
+    }
+}

@@ -1,0 +1,375 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1027C266-CBE2-48E6-A5E7-D14B2E5FF843}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Forms</RootNamespace>
+    <AssemblyName>Forms</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AntdUI, Version=2.0.5.0, Culture=neutral, PublicKeyToken=0e24e5118ea3d6af, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\AntdUI.dll</HintPath>
+    </Reference>
+    <Reference Include="ChineseConverter">
+      <HintPath>Dll\ChineseConverter.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar2">
+      <HintPath>Dll\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="HsmsLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=061ebfed17e2c3d6, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\HsmsLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="InnerEvents, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\InnerEvents.dll</HintPath>
+    </Reference>
+    <Reference Include="LogService, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Dll\LogService.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Prism">
+      <HintPath>Dll\Microsoft.Practices.Prism.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Prism.Interactivity">
+      <HintPath>Dll\Microsoft.Practices.Prism.Interactivity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Prism.UnityExtensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Dll\Microsoft.Practices.Prism.UnityExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation">
+      <HintPath>Dll\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity">
+      <HintPath>Dll\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.WebView2.Core, Version=1.0.3296.44, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.WebView2.1.0.3296.44\lib\net462\Microsoft.Web.WebView2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.WebView2.WinForms, Version=1.0.3296.44, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.WebView2.1.0.3296.44\lib\net462\Microsoft.Web.WebView2.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.WebView2.Wpf, Version=1.0.3296.44, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.WebView2.1.0.3296.44\lib\net462\Microsoft.Web.WebView2.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="MiniExcel, Version=1.36.0.0, Culture=neutral, PublicKeyToken=e7310002a53eac39, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\MiniExcel.dll</HintPath>
+    </Reference>
+    <Reference Include="Model, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Model.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="QMBaseClass, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\PC-T\Desktop\新模板案列\QMBaseClass_2.10\QM9110\bin\Debug\QMBaseClass.dll</HintPath>
+    </Reference>
+    <Reference Include="SECSGEM, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\SECSGEM.dll</HintPath>
+    </Reference>
+    <Reference Include="SqlAccess, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\SqlAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="SqlSugar, Version=5.1.4.197, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\SqlSugar.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SQLite">
+      <HintPath>..\..\..\..\..\Desktop\Communication\ConsoleApp\bin\Debug\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TCP">
+      <HintPath>..\..\Communication\ConsoleApp\bin\Debug\TCP.dll</HintPath>
+    </Reference>
+    <Reference Include="UserDemo, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Form\Controller\bin\Debug\UserDemo.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AxisInfo.cs" />
+    <Compile Include="Base.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Flow\Machine.cs" />
+    <Compile Include="Flow\动作流程\LeftTrayArm.cs" />
+    <Compile Include="Flow\动作流程\Transfer.cs" />
+    <Compile Include="Flow\动作流程\LeftMoveTray.cs" />
+    <Compile Include="Flow\动作流程\RightMoveTray.cs" />
+    <Compile Include="Flow\动作流程\RightTrayArm.cs" />
+    <Compile Include="Flow\动作流程\RightBIBArm.cs" />
+    <Compile Include="Flow\动作流程\LeftBIBArm.cs" />
+    <Compile Include="Flow\Variable.cs" />
+    <Compile Include="FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_POP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_POP.designer.cs">
+      <DependentUpon>Frm_POP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IO\DrawControl.cs" />
+    <Compile Include="Flow\FlowFactory.cs" />
+    <Compile Include="IO\IO_Form.cs" />
+    <Compile Include="LoginPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LoginPanel.Designer.cs">
+      <DependentUpon>LoginPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainPage\FrmUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainPage\FrmUser.Designer.cs">
+      <DependentUpon>FrmUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainPage\FrmView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainPage\FrmView.Designer.cs">
+      <DependentUpon>FrmView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ParamPage\DataGridClass.cs" />
+    <Compile Include="ParamPage\frmAddRole.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ParamPage\frmAddRole.Designer.cs">
+      <DependentUpon>frmAddRole.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ParamPage\frmAddUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ParamPage\frmAddUser.Designer.cs">
+      <DependentUpon>frmAddUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ParamPage\frmAssign.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ParamPage\frmAssign.Designer.cs">
+      <DependentUpon>frmAssign.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ParamPage\frmDebug.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ParamPage\frmDebug.Designer.cs">
+      <DependentUpon>frmDebug.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainPage\FrmRole.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainPage\FrmRole.Designer.cs">
+      <DependentUpon>FrmRole.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IO\frmIO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IO\frmIO.Designer.cs">
+      <DependentUpon>frmIO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ParamPage\frmMap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ParamPage\frmMap.Designer.cs">
+      <DependentUpon>frmMap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ParamPage\frmParam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ParamPage\frmParam.Designer.cs">
+      <DependentUpon>frmParam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ParamPage\FrmTCP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ParamPage\FrmTCP.Designer.cs">
+      <DependentUpon>FrmTCP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ParamPage\ParamData.cs" />
+    <Compile Include="ParamPage\ParamInfo.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SECSGEM\frmMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SECSGEM\frmMessage.Designer.cs">
+      <DependentUpon>frmMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SECSGEM\frmSecsGem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SECSGEM\frmSecsGem.Designer.cs">
+      <DependentUpon>frmSecsGem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SECSGEM\HSMS.cs" />
+    <Compile Include="SECSGEM\INIHelper.cs" />
+    <Compile Include="SECSGEM\MoveData.cs" />
+    <Compile Include="SECSGEM\SecsGEMVariable.cs" />
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_POP.resx">
+      <DependentUpon>Frm_POP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginPanel.resx">
+      <DependentUpon>LoginPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainPage\FrmUser.resx">
+      <DependentUpon>FrmUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainPage\FrmView.resx">
+      <DependentUpon>FrmView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParamPage\frmAddRole.resx">
+      <DependentUpon>frmAddRole.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParamPage\frmAddUser.resx">
+      <DependentUpon>frmAddUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParamPage\frmAssign.resx">
+      <DependentUpon>frmAssign.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParamPage\frmDebug.resx">
+      <DependentUpon>frmDebug.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainPage\FrmRole.resx">
+      <DependentUpon>FrmRole.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IO\frmIO.resx">
+      <DependentUpon>frmIO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParamPage\frmMap.resx">
+      <DependentUpon>frmMap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParamPage\frmParam.resx">
+      <DependentUpon>frmParam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParamPage\FrmTCP.resx">
+      <DependentUpon>FrmTCP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SECSGEM\frmMessage.resx">
+      <DependentUpon>frmMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SECSGEM\frmSecsGem.resx">
+      <DependentUpon>frmSecsGem.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="bin\Debug\AntdUI.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\保存_1750317864.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\文件导入_1750317952.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\导出_1750317912.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\新建_1750986807.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lunada.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mantle.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Venice.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bluelagoo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Colors Of Sky.jpg" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\Microsoft.Web.WebView2.1.0.3296.44\build\Microsoft.Web.WebView2.targets" Condition="Exists('..\packages\Microsoft.Web.WebView2.1.0.3296.44\build\Microsoft.Web.WebView2.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>这台计算机上缺少此项目引用的 NuGet 程序包。使用“NuGet 程序包还原”可下载这些程序包。有关更多信息，请参见 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的文件是 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Web.WebView2.1.0.3296.44\build\Microsoft.Web.WebView2.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Web.WebView2.1.0.3296.44\build\Microsoft.Web.WebView2.targets'))" />
+  </Target>
+</Project>
